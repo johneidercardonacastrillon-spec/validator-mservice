@@ -34,3 +34,4 @@ C:\Users\USUARIO\Documents\Eider\universidad\estructura de lenguajes\proyecto\Va
 C:\Users\USUARIO\Documents\Eider\universidad\estructura de lenguajes\proyecto\ValidatorService\obj\Debug\net8.0\ValidatorService.genruntimeconfig.cache
 C:\Users\USUARIO\Documents\Eider\universidad\estructura de lenguajes\proyecto\ValidatorService\obj\Debug\net8.0\ref\ValidatorService.dll
 C:\Users\USUARIO\Documents\Eider\universidad\estructura de lenguajes\proyecto\ValidatorService\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\USUARIO\Documents\Eider\universidad\estructura de lenguajes\proyecto\ValidatorService\obj\Debug\net8.0\ValidatorService.sourcelink.json

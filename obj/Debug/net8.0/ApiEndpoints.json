@@ -36,6 +36,21 @@
         "Name": "word",
         "Type": "System.String",
         "IsRequired": false
+      },
+      {
+        "Name": "maxDepth",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "maxWords",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "maxTokens",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

@@ -27,16 +27,21 @@ namespace ValidatorService.Controllers
         }
 
         [HttpGet("validate/{id}")]
-        public async Task<IActionResult> Generate(string id, [FromQuery] string word)
+        public async Task<IActionResult> Generate(
+    string id,
+    [FromQuery] string word,
+    [FromQuery] int maxDepth = 10,
+    [FromQuery] int maxWords = 1000,
+    [FromQuery] int maxTokens = 30)
         {
             var grammar = await _validatorService.GetGrammarByIdAsync(id);
             if (grammar == null)
                 return NotFound("No se encontró la gramática.");
 
             var generator = new GrammarGeneratorService(grammar);
-            var words = generator.GenerateWords();
 
-            bool belongs = generator.WordBelongs(word);
+            var words = generator.GenerateWords(maxDepth, maxWords, maxTokens);
+            bool belongs = generator.WordBelongs(word, words);
 
             return Ok(new
             {
