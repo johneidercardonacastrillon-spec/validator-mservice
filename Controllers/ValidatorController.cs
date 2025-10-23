@@ -28,11 +28,11 @@ namespace ValidatorService.Controllers
 
         [HttpGet("validate/{id}")]
         public async Task<IActionResult> Generate(
-    string id,
-    [FromQuery] string word,
-    [FromQuery] int maxDepth = 10,
-    [FromQuery] int maxWords = 1000,
-    [FromQuery] int maxTokens = 30)
+        string id,
+        [FromQuery] string word,
+        [FromQuery] int maxDepth = 10,
+        [FromQuery] int maxWords = 1000,
+        [FromQuery] int maxTokens = 30)
         {
             var grammar = await _validatorService.GetGrammarByIdAsync(id);
             if (grammar == null)
